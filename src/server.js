@@ -43,4 +43,4 @@ class Server {
   }
 }
 
-new Server();
+module.exports = new Server().app;

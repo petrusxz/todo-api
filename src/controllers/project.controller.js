@@ -62,6 +62,7 @@ class ProjectController {
     try {
       const { id } = req.params;
       await projectModel.deleteOne({ '_id': id });
+      await itemModel.deleteMany({ 'projectId': id });
       res.send();
     } catch (error) {
       res.status(400).send('Invalid data');

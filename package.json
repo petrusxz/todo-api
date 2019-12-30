@@ -5,11 +5,14 @@
   "main": "src/server.js",
   "scripts": {
     "start": "nodemon ./src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha 'tests/**/*.js'"
   },
   "author": "Petrus Cyrino",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^6.2.2",
     "nodemon": "^2.0.2"
   },
   "dependencies": {
